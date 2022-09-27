@@ -1,0 +1,10 @@
+{
+  "type" : "record",
+  "name" : "v",
+  "namespace" : "default.v",
+  "fields" : [ {
+    "name" : "Null_Field",
+    "type" : "null",
+    "doc" : "Field created from view literal with value: null"
+  } ]
+}

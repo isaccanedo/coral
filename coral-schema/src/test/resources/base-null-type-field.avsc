@@ -1,0 +1,15 @@
+{
+  "type" : "record",
+  "name" : "basenulltypefield",
+  "namespace" : "coral.schema.avro.base.null.type.field",
+  "fields" : [ {
+    "name" : "Null_Field",
+    "type" : "null"
+  }, {
+    "name" : "Nullable_Field",
+    "type" : ["null", "int"]
+  }, {
+    "name" : "Not_Nullable_Field",
+    "type" : "int"
+  } ]
+}

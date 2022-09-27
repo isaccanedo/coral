@@ -1,0 +1,82 @@
+// Copyright 2019-2020 LinkedIn Corporation. All rights reserved.
+// Licensed under the BSD-2 Clause license.
+// See LICENSE in the project root for license information.
+
+buildscript {
+  repositories {
+    jcenter()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "io.github.gradle-nexus:publish-plugin:1.1.0"
+    classpath "org.shipkit:shipkit-auto-version:1.1.1"
+    classpath "org.shipkit:shipkit-changelog:1.1.10"
+    classpath "com.github.jengelman.gradle.plugins:shadow:6.1.0"
+  }
+}
+
+plugins {
+  id "com.diffplug.spotless" version "5.9.0"
+}
+
+apply from: "gradle/shipkit.gradle"
+
+configurations {
+  provided
+}
+
+allprojects {
+  group = "com.linkedin.coral"
+  apply plugin: "com.diffplug.spotless"
+
+  repositories {
+    mavenCentral()
+    maven {
+      url 'https://linkedin.bintray.com/maven/'
+    }
+  }
+
+  spotless {
+    ratchetFrom 'origin/master'
+    groovyGradle {
+      target '**/*.gradle'
+      endWithNewline()
+      greclipse().configFile("${rootDir}/gradle/spotless/codestyle-eclipse.xml")
+    }
+    format 'markdown', {
+      target '**/*.md'
+      targetExclude 'docs/release-notes.md'
+      endWithNewline()
+      // Disabling Prettier since it causes TravisCI to barf
+      // prettier()
+    }
+  }
+}
+
+subprojects {
+  plugins.withType(JavaPlugin) {
+    dependencies {
+      testCompile deps.'testing'
+    }
+    test {
+      useTestNG()
+    }
+    spotless {
+      java {
+        importOrder('java', 'javax', 'com', 'org', 'com.linkedin.coral', '\\#')
+        removeUnusedImports()
+        eclipse().configFile("${rootDir}/gradle/spotless/codestyle-eclipse.xml")
+        licenseHeaderFile file("${rootDir}/gradle/license/LICENSE_HEADER")
+      }
+    }
+  }
+
+  apply from: "${rootDir}/gradle/dependencies.gradle"
+
+  // We exclude `coral-service` given it's a SpringBoot submodule and not compatible with `java-publication.gradle`
+  if (it.name != 'coral-service') {
+    apply from: "${rootDir}/gradle/java-publication.gradle"
+  }
+}

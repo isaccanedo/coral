@@ -1,0 +1,24 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ConfigureShadowRelocation
+apply plugin: "com.github.johnrengelman.shadow"
+
+dependencies {
+  compileOnly 'io.trino:trino-parser:355'
+}
+
+task relocateShadowJar(type: ConfigureShadowRelocation) {
+  target = tasks.shadowJar
+  prefix = 'coral.shading'
+}
+
+shadowJar {
+  configurations = [
+    project.configurations.compileOnly
+  ]
+  dependsOn(relocateShadowJar)
+}
+
+// Rename shadow jar to original artifact name, so that 'coral-trino-parser-x.x.x.jar' itself is the shadow jar
+jar {
+  enabled = false
+  dependsOn(shadowJar { classifier = null })
+}

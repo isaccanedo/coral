@@ -1,0 +1,27 @@
+dependencies {
+  // NOTE: jline is needed as testCompile for PigUnit tests because it is missing from Pig runtime
+  testCompile deps.'jline'
+
+  compile(project(path: ':coral-hive')) {
+    exclude group: 'jline', module: 'jline'
+  }
+
+  testCompile(deps.'pig'.'pig') { transitive = false }
+  testCompile(deps.'pig'.'pigunit') { transitive = false }
+
+  // Pull in hive-metastore transitively through hive-exec.
+  // Use shaded hive-exec/hive-metastore dependencies for Coral to prevent classpath
+  // conflicts with DaliStorage/PiggyBank.
+  testCompile(deps.'hive'.'hive-exec-core') {
+    exclude group: 'org.apache.avro', module: 'avro-tools'
+    // These exclusions are required to prevent duplicate classes since we include
+    // shaded coral-calcite jar above
+    exclude group: 'org.apache.calcite', module: 'calcite-core'
+    exclude group: 'org.apache.calcite', module: 'calcite-avatica'
+    exclude group: 'jline', module: 'jline'
+    exclude group: 'org.codehaus.groovy', module: 'groovy-all'
+  }
+
+  testCompile deps.'hadoop'.'hadoop-mapreduce-client-common'
+  testCompile deps.'kryo'
+}

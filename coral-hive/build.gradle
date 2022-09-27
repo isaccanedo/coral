@@ -1,0 +1,29 @@
+apply plugin: 'antlr'
+
+dependencies {
+  antlr deps.'antlr'
+  compile project(path: ':coral-common')
+  compile deps.'ivy'
+
+  // required for hiveSQL parser code
+  compile deps.'antlr-runtime'
+
+  testCompile(deps.'hive'.'hive-exec-core') {
+    exclude group: 'org.apache.avro', module: 'avro-tools'
+    // These exclusions are required to prevent duplicate classes since we include
+    // shaded jar above
+    exclude group: 'org.apache.calcite', module: 'calcite-core'
+    exclude group: 'org.apache.calcite', module: 'calcite-avatica'
+  }
+
+  testCompile deps.'hadoop'.'hadoop-mapreduce-client-core'
+  testCompile deps.'kryo'
+}
+
+sourceSets.main.antlr.srcDirs = ['src/main/antlr/roots']
+
+generateGrammarSource {
+  arguments += [
+    '-lib',
+    'src/main/antlr/imports'
+  ]}

@@ -1,0 +1,22 @@
+def modules = [
+  'coral-common',
+  'coral-hive',
+  'coral-pig',
+  'coral-spark',
+  'coral-schema',
+  'coral-spark-plan',
+  'coral-trino',
+  'coral-service',
+  'shading'
+]
+
+modules.each { module ->
+  if (!file(module).directory) {
+    throw new GradleException("Module '$module' specified in the settings.gradle file must be a valid directory in the root project.")
+  }
+  file(module).eachDir { submodule ->
+    if (!submodule.name.startsWith('.')) {
+      include "${module}:${submodule.name}"
+    }
+  }
+}

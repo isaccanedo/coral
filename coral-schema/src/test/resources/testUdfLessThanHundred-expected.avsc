@@ -1,0 +1,13 @@
+{
+  "type" : "record",
+  "name" : "foo_dali_udf",
+  "namespace" : "default.foo_dali_udf",
+  "fields" : [ {
+    "name" : "Id_View_Col",
+    "type" : "int"
+  }, {
+    "name" : "Id_View_LessThanHundred_Col",
+    "type" : "boolean",
+    "doc" : "Field created in view by applying UDF 'com.linkedin.coral.hive.hive2rel.CoralTestUDF1' with argument(s): coral.schema.avro.base.complex.basecomplex.Id"
+  } ]
+}
