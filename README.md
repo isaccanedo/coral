@@ -12,9 +12,9 @@ Coral não apenas traduz definições de visão entre diferentes dialetos SQL/n�
 produzir semanticamente equivalentes, levando em consideração a semântica da linguagem ou motor de destino.
 Por exemplo, ele compõe automaticamente novas expressões internas que são equivalentes a cada expressão interna no
 definição de exibição de origem. Além disso, integra-se com [Transport UDFs](https://github.com/linkedin/transport)
-para habilitar a tradução e execução de funções definidas pelo usuário (UDFs) no Hive, Trino, Spark e Pig. Coral is under
-active development. Currently, we are looking into expanding the set of input view language APIs beyond HiveQL,
-and implementing query rewrite algorithms for data governance and query optimization.
+para habilitar a tradução e execução de funções definidas pelo usuário (UDFs) no Hive, Trino, Spark e Pig.Coral está 
+em desenvolvimento ativo. Atualmente, estamos procurando expandir o conjunto de APIs de linguagem de visualização de entrada além do HiveQL,
+e implementação de algoritmos de reescrita de consulta para governança de dados e otimização de consulta.
 
 ## <img src="https://user-images.githubusercontent.com/10084105/141652009-eeacfab4-0e7b-4320-9379-6c3f8641fcf1.png" width="30" title="Slack Logo"> Slack
 
