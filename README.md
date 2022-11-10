@@ -8,8 +8,8 @@
 em vários mecanismos de execução. Ele executa traduções SQL para permitir visualizações expressas em HiveQL (e potencialmente
 outras linguagens) para serem acessíveis em mecanismos como [Trino (anteriormente PrestoSQL)](https://trino.io/),
 [Apache Spark](https://spark.apache.org/) e [Apache Pig](https://pig.apache.org/).
-Coral not only translates view definitions between different SQL/non-SQL dialects, but also rewrites expressions to
-produce semantically equivalent ones, taking into account the semantics of the target language or engine.
+Coral não apenas traduz definições de visão entre diferentes dialetos SQL/não SQL, mas também reescreve expressões para
+produzir semanticamente equivalentes, levando em consideração a semântica da linguagem ou motor de destino.
 For example, it automatically composes new built-in expressions that are equivalent to each built-in expression in the
 source view definition. Additionally, it integrates with [Transport UDFs](https://github.com/linkedin/transport)
 to enable translating and executing user-defined functions (UDFs) across Hive, Trino, Spark, and Pig. Coral is under
