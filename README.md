@@ -22,7 +22,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 
 ## Módulos
 
-**Coral** consists of following modules:
+**Coral** consiste nos seguintes módulos:
 
 - Coral-Hive: Converts definitions of Hive views with UDFs to equivalent view logical plan.
 - Coral-Trino: Converts view logical plan to Trino (formerly PrestoSQL) SQL, and vice versa.
