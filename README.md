@@ -20,7 +20,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 
 - Participe da discussão com a comunidade no Slack [aqui](https://join.slack.com/t/coral-sql/shared_invite/zt-s8te92up-qU5PSG~spK33ovPPL5v96A)!
 
-## Modules
+## Módulos
 
 **Coral** consists of following modules:
 
