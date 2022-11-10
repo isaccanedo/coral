@@ -18,7 +18,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 
 ## <img src="https://user-images.githubusercontent.com/10084105/141652009-eeacfab4-0e7b-4320-9379-6c3f8641fcf1.png" width="30" title="Slack Logo"> Slack
 
-- Join the discussion with the community on Slack [here](https://join.slack.com/t/coral-sql/shared_invite/zt-s8te92up-qU5PSG~spK33ovPPL5v96A)!
+- Participe da discussão com a comunidade no Slack [aqui](https://join.slack.com/t/coral-sql/shared_invite/zt-s8te92up-qU5PSG~spK33ovPPL5v96A)!
 
 ## Modules
 
