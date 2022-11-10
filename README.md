@@ -10,8 +10,8 @@ outras linguagens) para serem acessíveis em mecanismos como [Trino (anteriormen
 [Apache Spark](https://spark.apache.org/) e [Apache Pig](https://pig.apache.org/).
 Coral não apenas traduz definições de visão entre diferentes dialetos SQL/não SQL, mas também reescreve expressões para
 produzir semanticamente equivalentes, levando em consideração a semântica da linguagem ou motor de destino.
-For example, it automatically composes new built-in expressions that are equivalent to each built-in expression in the
-source view definition. Additionally, it integrates with [Transport UDFs](https://github.com/linkedin/transport)
+Por exemplo, ele compõe automaticamente novas expressões internas que são equivalentes a cada expressão interna no
+definição de exibição de origem. Additionally, it integrates with [Transport UDFs](https://github.com/linkedin/transport)
 to enable translating and executing user-defined functions (UDFs) across Hive, Trino, Spark, and Pig. Coral is under
 active development. Currently, we are looking into expanding the set of input view language APIs beyond HiveQL,
 and implementing query rewrite algorithms for data governance and query optimization.
