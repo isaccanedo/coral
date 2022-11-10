@@ -4,8 +4,8 @@
  <img src="docs/coral-logo.jpg" width="400" title="Coral Logo">
 </p>
 
-**Coral** is a library for analyzing, processing, and rewriting views defined in the Hive Metastore, and sharing them
-across multiple execution engines. It performs SQL translations to enable views expressed in HiveQL (and potentially
+**Coral** é uma biblioteca para analisar, processar e reescrever visualizações definidas no Hive Metastore e compartilhá-las
+em vários mecanismos de execução. It performs SQL translations to enable views expressed in HiveQL (and potentially
 other languages) to be accessible in engines such as [Trino (formerly PrestoSQL)](https://trino.io/),
 [Apache Spark](https://spark.apache.org/), and [Apache Pig](https://pig.apache.org/).
 Coral not only translates view definitions between different SQL/non-SQL dialects, but also rewrites expressions to
