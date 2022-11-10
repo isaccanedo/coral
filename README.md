@@ -24,7 +24,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 
 **Coral** consiste nos seguintes módulos:
 
-- Coral-Hive: Converts definitions of Hive views with UDFs to equivalent view logical plan.
+- Coral-Hive: Converte definições de visualizações do Hive com UDFs para o plano lógico de visualização equivalente;
 - Coral-Trino: Converts view logical plan to Trino (formerly PrestoSQL) SQL, and vice versa.
 - Coral-Spark: Converts view logical plan to Spark SQL.
 - Coral-Pig: Converts view logical plan to Pig-latin.
