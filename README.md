@@ -80,7 +80,7 @@ Uma API **POST** que usa uma instrução SQL para criar um banco de dados/tabela
 ```bash  
 git clone https://github.com/linkedin/coral.git  
 ```  
-2. From the root directory of Coral, access the coral-service module
+2. No diretório raiz do Coral, acesse o módulo coral-service
 ```bash  
 cd coral-service  
 ```  
