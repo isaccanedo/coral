@@ -93,7 +93,7 @@ cd coral-service
 ```bash  
 ../gradlew bootRun --args='--spring.profiles.active=localMetastore'  
 ```  
-Example workflow using local metastore:
+Fluxo de trabalho de exemplo usando metastore local:
 
 5. Create a database called `db1` in local metastore using the /api/catalog-ops/execute endpoint
 
