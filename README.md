@@ -75,7 +75,7 @@ Uma API **POST** que recebe o corpo da solicitação JSON contendo os seguintes 
 Uma API **POST** que usa uma instrução SQL para criar um banco de dados/tabela/visualização no metastore local
 (observação: este endpoint só está disponível com Coral Service no modo metastore local).
 
-### Instructions to use with examples
+### Instruções para usar com exemplos
 1. Clone [Coral repo](https://github.com/linkedin/coral)
 ```bash  
 git clone https://github.com/linkedin/coral.git  
