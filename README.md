@@ -29,7 +29,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 - Coral-Spark: Converte o plano lógico de exibição em Spark SQL;
 - Coral-Pig: Converte o plano lógico de visualização para Pig-latin;
 - Coral-Schema: Deriva o esquema Avro de visão usando o plano lógico de visão e os esquemas Avro de entrada de tabelas base;
-- Coral-Spark-Plan: Converts Spark plan strings to equivalent logical plan (in progress).
+- Coral-Spark-Plan: Converte as strings do plano Spark em um plano lógico equivalente (em andamento);
 - Coral-Service: Service that exposes REST APIs that allow users to interact with Coral (see [Coral-as-a-Service](##Coral-as-a-Service) for more details).
 
 ## How to Build
