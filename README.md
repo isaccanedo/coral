@@ -32,7 +32,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 - Coral-Spark-Plan: Converte as strings do plano Spark em um plano lógico equivalente (em andamento);
 - Coral-Service: Serviço que expõe APIs REST que permitem que os usuários interajam com o Coral (consulte [Coral-as-a-Service](##Coral-as-a-Service) para obter mais detalhes).
 
-## How to Build
+## Como construir
 
 Clone the repository:
 
