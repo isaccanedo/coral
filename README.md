@@ -88,7 +88,7 @@ cd coral-service
 ```bash  
 ../gradlew clean build  
 ```  
-#### To run Coral Service using the **local metastore**:
+#### Para executar o Coral Service usando o **metastore local**:
 4. Run
 ```bash  
 ../gradlew bootRun --args='--spring.profiles.active=localMetastore'  
