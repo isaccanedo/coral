@@ -51,7 +51,7 @@ Build:
 The project is under active development and we welcome contributions of different forms.
 Please see the [Contribution Agreement](CONTRIBUTING.md).
 
-## Resources
+## Recursos
 
 - [Coral: A SQL translation, analysis, and rewrite engine for modern data lakehouses](https://engineering.linkedin.com/blog/2020/coral), LinkedIn Engineering Blog, 12/10/2020.
 - [Coral & Transport UDFs: Building Blocks of a Postmodern Data Warehouse](https://www.slideshare.net/walaa_eldin_moustafa/coral-transport-udfs-building-blocks-of-a-postmodern-data-warehouse-229545076), Tech-talk, Facebook HQ, 2/28/2020.
