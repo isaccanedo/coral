@@ -116,7 +116,7 @@ curl --header "Content-Type: application/json" \
 Creation successful
 ```
 
-7. Translate a query on `db1.airport` in local metastore using the /api/translations/translate endpoint
+7. Traduza uma consulta em `db1.airport` no metastore local usando o endpoint /api/translations/translate
 
 ```bash
 curl --header "Content-Type: application/json" \
