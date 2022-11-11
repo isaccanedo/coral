@@ -95,7 +95,7 @@ cd coral-service
 ```  
 Fluxo de trabalho de exemplo usando metastore local:
 
-5. Create a database called `db1` in local metastore using the /api/catalog-ops/execute endpoint
+5. Crie um banco de dados chamado `db1` no metastore local usando o endpoint /api/catalog-ops/execute
 
 ```bash
 curl --header "Content-Type: application/json" \
