@@ -61,7 +61,7 @@ Please see the [Contribution Agreement](CONTRIBUTING.md).
 
 ## Coral-as-a-Service
 
-**Coral-as-a-Service** ou simplesmente **Coral Service** é um serviço que expõe APIs REST que permitem que os usuários interajam com o Coral sem necessariamente vir de um mecanismo de computação. Currently, the service supports an API for query translation between different dialects and another for interacting with a local Hive Metastore to create example databases, tables, and views so they can be referenced in the translation API. The service can be used in two modes: remote Hive Metastore mode, and local Hive Metastore mode. The remote mode uses an existing (already deployed) Hive Metastore to resolve tables and views, while the local one creates an empty embedded Hive Metastore so users can add their own table and view definitions.
+**Coral-as-a-Service** ou simplesmente **Coral Service** é um serviço que expõe APIs REST que permitem que os usuários interajam com o Coral sem necessariamente vir de um mecanismo de computação. Atualmente, o serviço oferece suporte a uma API para tradução de consulta entre diferentes dialetos e outra para interagir com um Hive Metastore local para criar bancos de dados, tabelas e exibições de exemplo para que possam ser referenciados na API de tradução. O serviço pode ser usado em dois modos: modo Hive Metastore remoto e modo Hive Metastore local. The remote mode uses an existing (already deployed) Hive Metastore to resolve tables and views, while the local one creates an empty embedded Hive Metastore so users can add their own table and view definitions.
 
 ### API Reference
 
