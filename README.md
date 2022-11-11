@@ -27,7 +27,7 @@ e implementação de algoritmos de reescrita de consulta para governança de dad
 - Coral-Hive: Converte definições de visualizações do Hive com UDFs para o plano lógico de visualização equivalente;
 - Coral-Trino: Converte o plano lógico de visualização em Trino (anteriormente PrestoSQL) SQL e vice-versa;
 - Coral-Spark: Converte o plano lógico de exibição em Spark SQL;
-- Coral-Pig: Converts view logical plan to Pig-latin.
+- Coral-Pig: Converte o plano lógico de visualização para Pig-latin;
 - Coral-Schema: Derives Avro schema of view using view logical plan and input Avro schemas of base tables.
 - Coral-Spark-Plan: Converts Spark plan strings to equivalent logical plan (in progress).
 - Coral-Service: Service that exposes REST APIs that allow users to interact with Coral (see [Coral-as-a-Service](##Coral-as-a-Service) for more details).
