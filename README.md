@@ -105,7 +105,7 @@ curl --header "Content-Type: application/json" \
 
 Creation successful
 ```
-6. Create a table called `airport` within `db1` in local metastore using the /api/catalog-ops/execute endpoint
+6. Crie uma tabela chamada `airport` dentro de `db1` no metastore local usando o endpoint /api/catalog-ops/execute
 
 ```bash
 curl --header "Content-Type: application/json" \
