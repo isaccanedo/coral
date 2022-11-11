@@ -46,7 +46,7 @@ Build:
 ./gradlew clean build
 ```
 
-## Contributing
+## Contribuindo
 
 The project is under active development and we welcome contributions of different forms.
 Please see the [Contribution Agreement](CONTRIBUTING.md).
