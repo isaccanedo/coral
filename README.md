@@ -145,7 +145,7 @@ FROM "db1"."airport"
 ```  
 7. Translate a query on existing table/view in remote metastore using the /translate endpoint
 
-### Currently Supported Translation Flows
+### Fluxos de tradução atualmente suportados
 1. Hive to Trino
 2. Hive to Spark
 3. Trino to Spark  
