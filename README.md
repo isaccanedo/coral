@@ -128,7 +128,7 @@ curl --header "Content-Type: application/json" \
   }' \
   http://localhost:8080/api/translations/translate
 ```
-The translation result is:
+O resultado da tradução é:
 ```
 Original query in hive: SELECT * FROM db1.airport
 Translated to trino:
