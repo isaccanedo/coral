@@ -137,7 +137,7 @@ FROM "db1"."airport"
 ```
 
 #### Para executar o Coral Service usando o **metastore remoto**:
-4. Add your kerberos client keytab file to `coral-service/src/main/resources`
+4. Adicione o arquivo keytab do cliente Kerberos a `coral-service/src/main/resources`
 5. Appropriately replace all instances of `SET_ME` in `coral-service/src/main/resources/hive.properties`
 6. Run
 ```  
