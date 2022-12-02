@@ -149,4 +149,5 @@ FROM "db1"."airport"
 1. Hive to Trino
 2. Hive to Spark
 3. Trino to Spark  
-   Note: During Trino to Spark translations, views referenced in queries are considered to be defined in HiveQL and hence cannot be used when translating a view from Trino. Currently, only referencing base tables is supported in Trino queries. This translation path is currently a POC and may need further improvements.
+
+Observação: durante as traduções de Trino para Spark, as exibições referenciadas em consultas são consideradas definidas no HiveQL e, portanto, não podem ser usadas ao traduzir uma exibição de Trino. Atualmente, apenas referenciar tabelas base é suportado em consultas Trino. Este caminho de tradução é atualmente um POC e pode precisar de mais melhorias.
