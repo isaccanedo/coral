@@ -2,7 +2,7 @@
  <img src="docs/coral-logo.jpg" width="400" title="Coral Logo">
 </p>
 
-# O que é a Biblioteca Coral?
+### O que é a Biblioteca Coral?
 
 **Coral** é uma biblioteca para analisar, processar e reescrever visualizações definidas no Hive Metastore e compartilhá-las
 em vários mecanismos de execução. Ele executa traduções SQL para permitir visualizações expressas em HiveQL (e potencialmente
